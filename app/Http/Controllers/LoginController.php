@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\admin;
+use App\Models\login;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class LoginController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,22 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.layout.dashadmin');
-    }
-
-    public function dataBarang()
-    {
-        return view('admin.layout.dataBarang');
-    }
-
-    public function dataCustomer()
-    {
-        return view('admin.layout.dataCustomer');
-    }
-
-    public function dataAkuntansi()
-    {
-        // 
+        return view('loginRegister.login');
     }
 
     /**
@@ -56,10 +41,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\login  $login
      * @return \Illuminate\Http\Response
      */
-    public function show(admin $admin)
+    public function show(login $login)
     {
         //
     }
@@ -67,10 +52,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\login  $login
      * @return \Illuminate\Http\Response
      */
-    public function edit(admin $admin)
+    public function edit(login $login)
     {
         //
     }
@@ -79,10 +64,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\login  $login
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, admin $admin)
+    public function update(Request $request, login $login)
     {
         //
     }
@@ -90,10 +75,10 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\login  $login
      * @return \Illuminate\Http\Response
      */
-    public function destroy(admin $admin)
+    public function destroy(login $login)
     {
         //
     }

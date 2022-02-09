@@ -14,7 +14,18 @@ class KaryawanController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('karyawan.layout.dashKaryawan');
+    }
+
+    public function tableBarang()
+    {
+        return view('karyawan.layout.dataBarang');
+    }
+
+    public function tableCustomer()
+    {
+        return view('karyawan.layout.dataCustomer');
     }
 
     /**
