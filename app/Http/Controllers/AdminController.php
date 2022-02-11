@@ -29,7 +29,7 @@ class AdminController extends Controller
 
     public function dataAkuntansi()
     {
-        // 
+        return view('admin.layout.dataAkuntansi');
     }
 
     /**
